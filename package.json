@@ -1,0 +1,27 @@
+{
+  "name": "countdown-timer-aezaz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node --esm ./src/index.ts",
+    "build":"rimraf ./build && tsc"
+  },
+  "bin":{
+    "countdown-timer":"./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/readline-sync": "^1.4.4",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "rimraf": "^4.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "license": "ISC"
+}
